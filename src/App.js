@@ -34,6 +34,16 @@ function App() {
       <Expenses expenses={expenses} />
     </div>
   );
+
+  // How returned JSX is transformed into javascript under the hood
+  // That's why we import React from 'react' in components where we use JSX in older projects
+
+  // return React.createElement(
+  //   'div',
+  //   {},
+  //   React.createElement('h2', {}, 'Expenses App'),
+  //   React.createElement(Expenses, { expenses: expenses })
+  // );
 }
 
 export default App;
